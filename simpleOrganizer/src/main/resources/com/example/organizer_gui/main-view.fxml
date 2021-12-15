@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StartWindowController">
+	<tabs>
+		<Tab text="Calendar">
+			<content>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+				<VBox>
+					<children>
+						<TableView fx:id="tvMeetings" />
+						<FlowPane>
+							<children>
+								<Button fx:id="bNewMeeting" onAction="#createNewMeeting" text="Create new meeting" />
+								<Button fx:id="bMetRefresh" onAction="#refMeet" text="Refresh" />
+                        <Separator prefHeight="24.0" prefWidth="368.0" />
+                        <Button fx:id="bMeetDelete" mnemonicParsing="false" text="Delete" onAction="#deleteMeeting" />
+							</children>
+						</FlowPane>
+					</children>
+				</VBox>
+			</content>
+		</Tab>
+		<Tab text="Contacts">
+			<content>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+				<VBox>
+					<children>
+						<TableView fx:id="tvContacts" />
+						<FlowPane>
+							<children>
+								<Button fx:id="bNewContact" onAction="#createNewContact" text="Create new contact" />
+								<Button fx:id="bMPeopRefresh" onAction="#refPeop" text="Refresh" />
+                        <Separator prefHeight="21.0" prefWidth="373.0" />
+                        <Button fx:id="bPeopDelete" mnemonicParsing="false" text="Delete" onAction="#deletePerson"/>
+							</children>
+						</FlowPane>
+					</children>
+				</VBox>
+			</content>
+		</Tab>
+	</tabs>
+</TabPane>

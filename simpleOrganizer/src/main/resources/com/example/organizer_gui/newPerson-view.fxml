@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="161.0"
+			prefWidth="326.0"
+			xmlns="http://javafx.com/javafx/11.0.2"
+			xmlns:fx="http://javafx.com/fxml/1"
+			fx:controller="controllers.NewPersonController">
+	<children>
+		<VBox layoutY="-1.0" prefHeight="162.0" prefWidth="333.0">
+			<children>
+				<FlowPane prefHeight="28.0" prefWidth="601.0">
+					<children>
+						<Label prefHeight="17.0" prefWidth="120.0" text="Name and Surname:"/>
+						<TextField prefHeight="25.0" prefWidth="150.0" fx:id="tfName"/>
+					</children>
+				</FlowPane>
+				<FlowPane prefHeight="29.0" prefWidth="601.0">
+					<children>
+						<Label prefHeight="17.0" prefWidth="121.0" text="Phone number:"/>
+						<TextField prefHeight="25.0" prefWidth="150.0" fx:id="tfPhone"/>
+					</children>
+				</FlowPane>
+				<FlowPane prefHeight="28.0" prefWidth="601.0">
+					<children>
+						<Label prefHeight="17.0" prefWidth="121.0" text="Email: "/>
+						<TextField prefHeight="25.0" prefWidth="150.0" fx:id="tfEmail"/>
+					</children>
+				</FlowPane>
+				<FlowPane prefHeight="33.0" prefWidth="601.0">
+					<children>
+						<Label prefHeight="17.0" prefWidth="121.0" text="Address:"/>
+						<TextField prefHeight="25.0" prefWidth="150.0" fx:id="tfAddress"/>
+					</children>
+				</FlowPane>
+				<FlowPane prefHeight="33.0" prefWidth="509.0">
+					<children>
+						<Button fx:id="bConfirm" prefHeight="25.0" prefWidth="110.0" text="Confirm" onAction="#addPerson"/>
+						<Button fx:id="bBack" prefHeight="25.0" prefWidth="110.0" text="Back" onAction="#goBack"/>
+					</children>
+				</FlowPane>
+			</children>
+		</VBox>
+	</children>
+</AnchorPane>

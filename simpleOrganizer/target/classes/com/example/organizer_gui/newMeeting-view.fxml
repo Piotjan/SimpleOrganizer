@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="161.0"
+			prefWidth="326.0"
+			xmlns="http://javafx.com/javafx/11.0.2"
+			xmlns:fx="http://javafx.com/fxml/1"
+			fx:controller="controllers.NewMeetingController">
+	<children>
+		<VBox layoutY="-1.0" prefHeight="162.0" prefWidth="333.0">
+			<children>
+				<FlowPane prefHeight="28.0" prefWidth="601.0">
+					<children>
+						<Label prefHeight="17.0" prefWidth="120.0" text="Name of Meeting:"/>
+						<TextField prefHeight="25.0" prefWidth="150.0" fx:id="tfName"/>
+					</children>
+				</FlowPane>
+				<FlowPane prefHeight="29.0" prefWidth="601.0">
+					<children>
+						<Label prefHeight="17.0" prefWidth="121.0" text="Date (dd.mm.yyyy):"/>
+						<TextField prefHeight="25.0" prefWidth="150.0" fx:id="tfDate"/>
+					</children>
+				</FlowPane>
+				<FlowPane prefHeight="28.0" prefWidth="601.0">
+					<children>
+						<Label prefHeight="17.0" prefWidth="121.0" text="Duration: "/>
+						<TextField prefHeight="25.0" prefWidth="150.0" fx:id="tfDuration"/>
+					</children>
+				</FlowPane>
+				<FlowPane prefHeight="33.0" prefWidth="601.0">
+					<children>
+						<Label prefHeight="17.0" prefWidth="121.0" text="Place:"/>
+						<TextField prefHeight="25.0" prefWidth="150.0" fx:id="tfPlace"/>
+					</children>
+				</FlowPane>
+				<FlowPane prefHeight="33.0" prefWidth="509.0">
+					<children>
+						<Button prefHeight="25.0" prefWidth="110.0" text="Confirm" fx:id="bConfirm" onAction="#addMeeting"/>
+						<Button prefHeight="25.0" prefWidth="110.0" text="Back" fx:id="bBack" onAction="#goBack"/>
+					</children>
+				</FlowPane>
+			</children>
+		</VBox>
+	</children>
+</AnchorPane>
